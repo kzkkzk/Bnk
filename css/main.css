@@ -186,8 +186,8 @@ html,body{height: 100%;}
 
 @media (max-width: 740px){
     .ham {
-        width: 32px;
-        height: 24px;
+        width: 24px;
+        height: 18px;
         display: inline-block;
         position: absolute;
         -webkit-transform: rotate(0deg);
@@ -195,14 +195,16 @@ html,body{height: 100%;}
         -o-transform: rotate(0deg);
         transform: rotate(0deg);
         cursor: pointer;
-        margin-left: 15px;
-        margin-top: 15px;
+        margin-left: 16px;
+        margin-top: 16px;
+        top: 0; left: 0;
+        z-index: 10;
     }
     .hamline {
         display: block;
         position: absolute;
-        height: 2px;
-        width: 32px;
+        height: 3px;
+        width: 24px;
         background: #003652;
         opacity: 1;
         left: 0;
@@ -219,13 +221,15 @@ html,body{height: 100%;}
         top: 0; 
     }
     .hamline:nth-child(2) {
-        top: 8px; 
+        top: 7px;
     }
     .hamline:nth-child(3) {
-        top: 8px; 
+        top: 7px;
     }
     .hamline:nth-child(4) {
-        top: 16px; 
+        top: 14px;
+    }
+    .active .hamline {
     }
     .active .hamline:nth-child(1) {
         top: 8px;
