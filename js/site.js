@@ -62,7 +62,7 @@ $(document).ready(function(){
 	if($('.owl-gallery').length > 0) {
 		$('.owl-gallery').slick({
 			dots: true,
-			autoplay: false,
+			autoplay: true,
 			vertical: true,
 			autoplaySpeed: 3000,
 			prevArrow: false,
